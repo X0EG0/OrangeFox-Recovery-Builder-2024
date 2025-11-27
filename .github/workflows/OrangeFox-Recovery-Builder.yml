@@ -96,8 +96,8 @@ jobs:
         cd ${GITHUB_WORKSPACE}/OrangeFox
         git config --global user.name "Samuel Kendall"
         git config --global user.email "kinguser981@gmail.com"
-        git clone https://gitlab.com/OrangeFox/sync.git
-        cd sync
+        git clone https://github.com/Teguhpunya/orangefox_sync.git
+        cd orangefox_sync
         ./orangefox_sync.sh --branch ${{ github.event.inputs.MANIFEST_BRANCH }} --path ${GITHUB_WORKSPACE}/OrangeFox/fox_${{ github.event.inputs.MANIFEST_BRANCH }}
 
     - name: Clone Device Tree
